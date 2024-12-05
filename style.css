@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+.nav-link{
+    @apply relative py-5 cursor-pointer hover:text-blue-700 transition-colors duration-200
+}

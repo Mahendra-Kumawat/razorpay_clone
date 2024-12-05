@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="./script.js " defer></script>
+    <title>Razorpay clone</title>
+  </head>
+  <body>
+    <header class="bg-blueDark">
+      <nav
+        class="max-w-[1080px] px-4 md:px-8 lg:px-0 py-2  mx-auto flex items-center justify-between"
+      >
+        <a href="/" class="py-5">
+          <img src="./assests/logo.svg" alt="logo" width="120" />
+        </a>
+        <ul class="hidden lg:flex gap-5">
+          <li class="nav-link group text-white">
+            <a href="#"> payments </a>
+            <div
+              class="absolute hidden w-full h-1 bg-blue-700 group-hover:block bottom-0"
+            ></div>
+          </li>
+          <li class="nav-link group text-white">
+            <a href="#"> Banking </a>
+            <div
+              class="absolute hidden w-full h-1 bg-blue-700 group-hover:block bottom-0"
+            ></div>
+          </li>
+
+          <li class="nav-link group text-white">
+            <a href="#"> corporate card </a>
+          </li>
+
+          <li class="nav-link group text-white">
+            <a href="#"> payroll </a>
+          </li>
+
+          <li class="nav-link group text-white">
+            <a href="#"> resources </a>
+            <div
+              class="absolute hidden w-full h-1 bg-blue-700 group-hover:block bottom-0"
+            ></div>
+          </li>
+
+          <li class="nav-link group text-white">
+            <a href="#"> support </a>
+            <div
+              class="absolute hidden w-full h-1 bg-blue-700 group-hover:block bottom-0"
+            ></div>
+          </li>
+
+          <li class="nav-link group text-white">
+            <a href="#"> pricing </a>
+            <div
+              class="absolute hidden w-full h-1 bg-blue-700 group-hover:block bottom-0"
+            ></div>
+          </li>
+        </ul>
+
+        <div id="right" class="hidden lg:flex gap-5 items-center ml-2">
+          <img src="./assests/india-flag.svg" alt="India flag" />
+          <button
+            class="capitalize py-3 font-semibold text-white px-5 border-[1px] border-blue-700 text-sm rounded-sm"
+          >
+            log In
+          </button>
+
+          <button
+            class="capitalize flex items-center py-3 font-semibold text-sm px-5 bg-white text-blue-600 rounded-sm group"
+          >
+            Sign UP
+            <span class="transition duration-200 group-hover:translate-x-1">
+              <svg
+                viewBox="0 0 24 24"
+                focusable="false"
+                class="w-[14px] h-[14px] ml-1"
+              >
+                <path
+                  fill="currentColor"
+                  d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"
+                ></path>
+              </svg>
+            </span>
+          </button>
+        </div>
+
+        <!-- menu button -->
+        <div class="py-3 flex justify-between lg:hidden items-center">
+          <button
+            class="capitalize py-3 flex items-center font-semibold text-white px-5 border-[1px] border-blue-700 text-sm rounded-lg group"
+          >
+            <span>
+              log In
+            </span>
+            <span
+              class="transition ml-2 duration-200 group-hover:translate-x-1"
+            >
+              <img src="./assests/right_arrow.svg" alt="right arrow">
+            </span>
+          </button>
+
+          <span class="text-white p-2 lg:hidden cursor-pointer" id="menu-icon">
+            <img
+              src="./assests/menu.svg"
+              alt="menu button"
+              height="30"
+              width="30"
+            />
+          </span>
+        </div>
+        <!-- responsive menu  -->
+
+        <div
+          id="nav-dilog"
+          class="z-10 fixed top-0 hidden lg:hidden bg-white inset-0 overflow-y-auto"
+        >
+          <div class="bg-blue-900 py-3 px-4 flex justify-between items-center">
+            <a href="">
+              <img
+                src="./assests/logo.svg"
+                alt="logo"
+                height="20"
+                width="100"
+              />
+            </a>
+            <div class="flex gap-2 items-center">
+              <button
+                class="capitalize py-3 gap-2 flex items-center font-semibold text-white px-5 border-[1px] border-blue-700 text-sm rounded-lg"
+              >
+                log In
+               <img src="./assests/right_arrow.svg" alt="right arrow">
+                </span>
+              </button>
+              <span id="cross" class="cursor-pointer text-white">
+                <img src="./assests/cross.svg" alt="" height="30" width="30" />
+              </span>
+            </div>
+          </div>
+
+          <div id="nav-items" class="relative">
+            <a
+            href="#"
+              class="px-3 py-4 items-center flex text-gray-800 gap-2 text-sm font-semibold">
+              <img src="./assests/india-flag.svg" alt="indian flag" />
+              <span>
+                India
+              </span>
+              <span class="font-normal px-2 py-1 rounded-sm border border-gray-700">
+                IN
+              </span>
+            </a>
+            <ul class="flex flex-col py-4 mb-14">
+              <li class="nav-link group  rounded-md px-3 text-gray-700 font-semibold">
+                <a href="/"> payments </a>
+              </li>
+              <li class="nav-link group  rounded-md px-3 text-gray-700 font-semibold">
+                <a href="#"> Banking </a>
+              </li>
+                <li class="nav-link group  rounded-md px-3 text-gray-700 font-semibold">
+                <a href="#"> corporate card </a>
+              </li>
+              <li class="nav-link group  rounded-md px-3 text-gray-700 font-semibold">
+                <a href="#"> payroll </a>
+              </li>
+              <li class="nav-link group  rounded-md px-3 text-gray-700 font-semibold">
+                <a href="#"> resources </a>
+              </li>
+              <li class="nav-link group  rounded-md px-3 text-gray-700 font-semibold">
+                <a href="#"> support </a>
+              </li>
+              <li class="nav-link group  rounded-md px-3 text-gray-700 font-semibold">
+                <a href="#"> pricing </a>
+              </li>
+            </ul>
+
+            <div class="bg-white p-3 fixed bottom-0 w-full">
+              <button
+                class="capitalize w-full py-3 font-semibold text-sm px-5 bg-blue-800 text-white rounded-lg group"
+              >
+                Sign Up Now
+              </button>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+
+      <!-- hero section -->
+      <section id="hero-section" class="bg-blueDark relative pt-3 md:pt-5">
+        
+          <div id="hero" class="max-w-[1080px] md:px-8 px-4 mx-auto gap-3 flex flex-col lg:flex-row items-center justify-between">
+
+            <div id="left" class="flex flex-col justify-center gap-7 md:pt-6 font-custom my-10 lg:my-0">
+              <h1 class="text-[42px] font-bold text-white leading-tight">
+                Power your finance, grow your business
+              </h1>
+              <div id="line" class="w-8 h-[6px] bg-green-600 rounded-md"></div>
+
+              <p class="text-gray-400 font-normal md:leading-loose text-lg">
+                Accept payments from customers. Automate payouts to vendors & employees. Never run out of working capital.
+              </p>
+
+              <button class="px-5 py-[14px] text-white font-semibold cursor-pointer rounded-lg transition duration-200 hover:bg-blue-700 bg-blue-600 border-none outline-none w-fit focus:outline-gray-500 focus:outline-offset-2">
+                Sign Up Now 
+              </button>
+
+            </div>
+
+
+            <div id="right" class="max-w-[680px]">
+                <img src="./assests/hero-illustration.jpg" alt="" class="w-full">
+            </div>
+
+
+
+          </div>
+
+          <div class="absolute  w-full">
+            <img src="./assests/hero-shape.svg" alt="" class="w-full">
+          </div>
+      
+      
+      </section>
+
+
+<!-- main cntent start here  --> 
+      <main>
+
+        <section class="relative overflow-hidden bg-white mt-[9rem]">
+          <img src="./assests/feature-section1-dottedrows.png" alt=""
+          class="absolute -top-[8rem] left-[5rem] hidden md:block"
+          >
+
+          <img src="./assests/feature-section1-dottedrows.png" alt=""
+          class="absolute top-[4rem] right-0 rotate-180 hidden md:block"
+          >
+
+
+          <div class="w-11/12 max-w-[1080px] mx-auto ">
+            <h3 class="text-[25px] hidden md:block font-bold font-custom text-center py-3">
+              Accept Payments with Razorpay Payment Suite
+            </h3>
+
+            <h3 class="md:hidden text-[2.5rem] font-extrabold leading-[1.2]  font-custom text-center py-3">
+              Explore Razorpay Payment Suite
+            </h3>
+            <div id="line" class="w-8 h-[6px] mx-auto bg-green-600 rounded-md"></div>
+
+            <div class="w-full md:border md:border-gray-300 mt-[4rem] bg-white rounded-lg flex items-center jucetify-between relative">
+              <div class="py-10 pl-10 w-full">
+                <h3 class="md:text-[30px] text-xl leading-normal font-semibold font-custom max-w-[190px] md:max-w-[550px] text-gray-800">
+                  Supercharge your business with the all-powerful <span class="text-blue-700">
+                    Payment Gateway
+                  </span>
+                </h3>
+
+                <ul class="my-4 md:my-10 flex flex-col gap-3">
+                  <li class="flex gap-3 items-center">
+                    <img src="./assests/right_sign.svg" alt="Right sign">
+                    <span>
+                      100+ Payment Methods
+                    </span>
+                  </li>
+
+                  
+                  <li class="flex gap-3 items-center">
+                    <img src="./assests/right_sign.svg" alt="Right sign">
+                    <span>
+                      Industry Leading Success Rate
+
+                    </span>
+                  </li>
+
+
+                  <li class="flex gap-3 items-center">
+                    <img src="./assests/right_sign.svg" alt="Right sign">
+                    <span>
+                      Superior Checkout Experience
+
+                    </span>
+                  </li>
+
+
+                  <li class="flex gap-3 items-center">
+                    <img src="./assests/right_sign.svg" alt="Right sign">
+                    <span>
+                      Easy to Integrate
+                      
+                    </span>
+                  </li>
+
+                  <li class="flex gap-3 items-center">
+                    <img src="./assests/right_sign.svg" alt="Right sign">
+                    <span>
+                      Instant Settlements from day 1
+                      
+                    </span>
+                  </li>
+                  
+                  <li class="flex gap-3 items-center">
+                    <img src="./assests/right_sign.svg" alt="Right sign">
+                    <span>
+                      In-depth Reporting and Insights
+                    </span>
+                  </li>
+                  
+                </ul>
+
+                <div class="flex flex-col-reverse md:flex-row gap-1 md:gap-5 w-full">
+                  <button class="flex gap-2 items-center px-5 py-[14px] text-white font-semibold cursor-pointer rounded-lg transition duration-200 hover:bg-blue-700 bg-blue-600 border-none outline-none w-11/12 md:w-fit focus:outline-gray-500 focus:outline-offset-2">
+                    <span>
+                      Sign Up Now
+                    </span>
+                    <img src="./assests/right_arrow.svg" alt="">
+                  </button>
+
+                  <a href="/" class="flex items-center px-5 py-[14px] font-semibold cursor-pointer rounded-lg transition duration-200  text-[#34569b] border-none outline-none w-fit focus:outline-gray-500 focus:outline-offset-2">
+                    Know more
+                    <img src="./assests/chevron-right.svg" alt=""
+                    class="-ml-1" 
+                    >
+                  </a>
+                </div>
+              </div>
+
+              <!-- right part of the section-1 -->
+
+              <div class="absolute right-0 bottom-0 lg:w-[60%] w-[450px] hidden md:block
+              ">
+                <img src="./assests/payment-suite.png" alt="payment" loading="lazy" class="w-full">
+              </div>
+
+
+            </div>
+          </div>
+
+        </section>
+
+      </main>
+        
+
+ 
+
+  </body>
+</html>
