@@ -6,7 +6,6 @@ Welcome to the Tailwind CSS project! Follow these simple steps to set up and run
 1️⃣ Clone the Repository
 
 ```
-bash
 git clone https://github.com/Mahendra-Kumawat/razorpay_clone.git
 
 ```
